@@ -9,8 +9,8 @@ from utils import create_gauge_chart, create_model_probability_chart
 
 if 'GROQ_API_KEY' in os.environ:
     api_key = os.environ["GROQ_API_KEY"]
-    else:
-api_key = os.getenv("GROQ_API_KEY")
+else:
+    api_key = os.getenv("GROQ_API_KEY")
 
 client = OpenAI(base_url="https://api.groq.com/openai/v1/", api_key=api_key)
 
